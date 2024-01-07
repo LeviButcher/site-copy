@@ -23,6 +23,12 @@ dependencies:
 - base >= 4.7 && < 5
 - scalpel
 - tagsoup
+- directory
+- filepath
+- http-client
+- http-conduit
+- bytestring
+- network-uri
 
 ghc-options:
 - -Wall

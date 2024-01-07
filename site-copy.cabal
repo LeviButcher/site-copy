@@ -35,6 +35,12 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , bytestring
+    , directory
+    , filepath
+    , http-client
+    , http-conduit
+    , network-uri
     , scalpel
     , tagsoup
   default-language: Haskell2010
@@ -50,6 +56,12 @@ executable site-copy-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
+    , directory
+    , filepath
+    , http-client
+    , http-conduit
+    , network-uri
     , scalpel
     , site-copy
     , tagsoup
@@ -67,6 +79,12 @@ test-suite site-copy-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
+    , directory
+    , filepath
+    , http-client
+    , http-conduit
+    , network-uri
     , scalpel
     , site-copy
     , tagsoup
